@@ -1,0 +1,30 @@
+digraph NFA {
+    rankdir=LR;
+    size="10,5";
+    node [shape=circle, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=11];
+
+    // Invisible start arrow
+    start [shape=point, width=0];
+    start -> q0;
+
+    // Accept state
+    q13 [shape=doublecircle];
+
+    q0 -> q2 [label="ε"];
+    q0 -> q1 [label="ε"];
+    q2 -> q4 [label="ε"];
+    q2 -> q6 [label="ε"];
+    q1 -> q8 [label="ε"];
+    q4 -> q5 [label="a"];
+    q6 -> q7 [label="b"];
+    q8 -> q9 [label="a"];
+    q5 -> q3 [label="ε"];
+    q7 -> q3 [label="ε"];
+    q9 -> q10 [label="ε"];
+    q3 -> q2 [label="ε"];
+    q3 -> q1 [label="ε"];
+    q10 -> q11 [label="b"];
+    q11 -> q12 [label="ε"];
+    q12 -> q13 [label="b"];
+}

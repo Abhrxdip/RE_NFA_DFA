@@ -1,0 +1,23 @@
+digraph DFA {
+    rankdir=LR;
+    size="10,5";
+    node [shape=circle, fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=11];
+
+    // Invisible start arrow
+    start [shape=point, width=0];
+    start -> D0;
+
+    D4 [shape=doublecircle];
+
+    D0 -> D1 [label="a"];
+    D0 -> D2 [label="b"];
+    D1 -> D1 [label="a"];
+    D1 -> D3 [label="b"];
+    D2 -> D1 [label="a"];
+    D2 -> D2 [label="b"];
+    D3 -> D1 [label="a"];
+    D3 -> D4 [label="b"];
+    D4 -> D1 [label="a"];
+    D4 -> D2 [label="b"];
+}

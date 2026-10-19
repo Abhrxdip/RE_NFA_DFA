@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary scratch and extraction files
+extracted_img_*.png
+reference_text.txt
+.system_generated/
+
+# Exclude Project Report PDFs (as requested: do not push report PDF)
+*.pdf
+Compiler_Design_PCC_CS501_Mini_Project_Report.pdf
+Compiler_Design_PCC_CS501_Project_Report.pdf
